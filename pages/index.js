@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className='container mx-auto px-4 bg-white h-screen'>
+    <div className='container mx-auto px-4  h-screen'>
     <img className='object-none object-center w-[100vw] h-[55vh]' src='/Group.svg' alt='Wasatch Ski Company'/>
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-10">

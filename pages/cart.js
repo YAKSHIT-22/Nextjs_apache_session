@@ -70,19 +70,19 @@ function Cart({cart, removeFromCart}) {
                         <div className="flex justify-between border-b pb-8">
                             <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
                                 <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Shopping Cart</h1>
-                                <div className="h-1 w-20 bg-blue-500 rounded"></div>
+                                <div className="h-1 w-20 bg-indigo-500 rounded"></div>
                             </div>
                         </div>
                         {cart.length?
                             <div className="flex mt-6 mb-5">
                                 <h3 className="font-semibold text-gray-900 text-xs uppercase w-2/5">Product</h3>
-                                <h3 className="font-semibold  text-gray-900 text-xs uppercase w-1/5 text-center">Quantity</h3>
-                                <h3 className="font-semibold  text-gray-900 text-xs uppercase w-1/5 text-center">Remove</h3>
-                                <h3 className="font-semibold  text-gray-900 text-xs uppercase w-1/5 text-center">Subtotal</h3>
+                                <h3 className="font-semibold text-center text-gray-900 text-xs uppercase w-1/5 text-center">Quantity</h3>
+                                <h3 className="font-semibold text-center text-gray-900 text-xs uppercase w-1/5 text-center">Remove</h3>
+                                <h3 className="font-semibold text-center text-gray-900 text-xs uppercase w-1/5 text-center">Subtotal</h3>
                             </div>
                         :
                             <Link href='/products'>
-                                <a href="#" className="flex font-semibold text-blue-600 text-sm mt-10">
+                                <a href="#" className="flex font-semibold text-indigo-600 text-sm mt-10">
                                     Oh! your cart is empty, let&apos;s start shopping!
                                 </a>
                             </Link>
@@ -98,7 +98,7 @@ function Cart({cart, removeFromCart}) {
                                             </div>
                                             <div className="flex flex-col ml-4 flex-grow">
                                                 <span className="mt-1 flex justify-between text-base font-medium text-gray-900">{item.name}</span>
-                                                <span className="text-blue-600 text-sm mt-4">{item.category}</span>
+                                                <span className="text-indigo-600 text-sm mt-4">{item.category}</span>
                                             </div>
                                         </div>
                                     </Link>
@@ -118,8 +118,8 @@ function Cart({cart, removeFromCart}) {
                         {
                             cart.length?
                                 <Link href='/products'>
-                                    <a href="#" className="flex font-semibold text-blue-600 text-sm mt-10">
-                                        <svg className="fill-current mr-2 text-blue-600 w-4" viewBox="0 0 448 512"><path d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z"/></svg>
+                                    <a href="#" className="flex font-semibold text-indigo-600 text-sm mt-10">
+                                        <svg className="fill-current mr-2 text-indigo-600 w-4" viewBox="0 0 448 512"><path d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z"/></svg>
                                         Continue Shopping
                                     </a>
                                 </Link>
@@ -152,7 +152,7 @@ function Cart({cart, removeFromCart}) {
                                     { currencyFormat(subtotal + 100, process.env.NEXT_PUBLIC_STORE_LOCALE, process.env.NEXT_PUBLIC_STORE_CURRENCY, 2) }
                                 </span>
                             </div>
-                            <button disabled={cart.length === 0} onClick={createUpdateOrderAndCheckout} className="disabled:bg-indigo-3 00 bg-blue-500 font-semibold hover:bg-blue-600 py-3 text-sm text-white uppercase w-full">Checkout</button>
+                            <button disabled={cart.length === 0} onClick={createUpdateOrderAndCheckout} className="disabled:bg-indigo-3 00 bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full">Checkout</button>
                         </div>
                     </div>
                 </div>

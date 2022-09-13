@@ -17,7 +17,7 @@ const Slug = ({ product, addToCart }) => {
                             <h2 className="text-sm title-font text-gray-500 tracking-widest">Wasatch Ski Company</h2>
                             <h1 className="text-gray-900 text-3xl title-font font-medium mb-1 mt-2">{product.name}</h1>
                             <div className="flex mb-4">
-                                <h3 className="tracking-widest text-indigo-600 font-medium">{product.category}</h3>
+                                <h3 className="tracking-widest text-blue-600 font-medium">{product.category}</h3>
                             </div>
                             <p className="leading-relaxed">{product.description}</p>
                             
@@ -26,8 +26,8 @@ const Slug = ({ product, addToCart }) => {
                                     { currencyFormat(product.price, 'en-IN', product.currency, 2) }
                                 </span>
                                 <div className='flex mx-4'>
-                                    <button onClick={() => { addToCart(slug, 1, product) }} className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-2 mx-3 focus:outline-none hover:bg-indigo-600 rounded">Add to Cart</button>
-                                    <button onClick={() => { router.push('/cart') }} className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-2 mx-2 focus:outline-none hover:bg-indigo-600 rounded">Checkout</button>
+                                    <button onClick={() => { addToCart(slug, 1, product) }} className="flex ml-auto text-white bg-blue-500 border-0 py-2 px-2 mx-3 focus:outline-none hover:bg-blue-600 rounded">Add to Cart</button>
+                                    <button onClick={() => { router.push('/cart') }} className="flex ml-auto text-white bg-blue-500 border-0 py-2 px-2 mx-2 focus:outline-none hover:bg-blue-600 rounded">Checkout</button>
                                 </div>
                                 
                             </div>

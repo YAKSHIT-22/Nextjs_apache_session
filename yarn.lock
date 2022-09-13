@@ -1694,6 +1694,11 @@
     "get-intrinsic" "^1.0.2"
     "object-inspect" "^1.9.0"
 
+"simple-currency-format@^2.3.0":
+  "integrity" "sha512-NIKyc4gwSZ6kl22sUr51paMMkbPKg14/YqMrrJLs/w9YLYUjEXKU9AbSi0q2X/TAazKAlKenUBdMK7VHXossYw=="
+  "resolved" "https://registry.npmjs.org/simple-currency-format/-/simple-currency-format-2.3.0.tgz"
+  "version" "2.3.0"
+
 "slash@^3.0.0":
   "integrity" "sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q=="
   "resolved" "https://registry.npmjs.org/slash/-/slash-3.0.0.tgz"
